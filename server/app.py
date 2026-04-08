@@ -3,10 +3,18 @@
 from server.environment import IncidentEnvironment
 
 
-def create_app():
-    """Factory function required for OpenEnv multi-mode deployment."""
+def main():
+    """
+    Required entrypoint for multi-mode deployment.
+    Returns the environment instance.
+    """
     return IncidentEnvironment(seed=42)
 
 
-# Some runtimes import `app` directly
-app = create_app()
+# Some runtimes import `app`
+app = main()
+
+
+if __name__ == "__main__":
+    # Ensures callable entrypoint
+    main()
