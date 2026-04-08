@@ -1,3 +1,11 @@
+---
+title: Distributed Incident Response Orchestrator
+emoji: ⚙️
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+pinned: false
+---
 # Distributed Incident Response Orchestrator
 
 This project is a deterministic OpenEnv-style simulation where an agent manages infrastructure incidents under time pressure.
@@ -110,7 +118,7 @@ incident-response-env/
 ├── client.py
 ├── models.py
 ├── Dockerfile
-├── openenv.yaml
+├── openenv.yaml      
 ├── README.md
 └── requirements.txt
 
